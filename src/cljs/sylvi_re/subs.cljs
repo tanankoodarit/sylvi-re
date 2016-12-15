@@ -23,11 +23,6 @@
     (:isauthenticated db)))
 
 (re-frame/reg-sub
-  :routes
-  (fn [db]
-    (:routes db)))
-
-(re-frame/reg-sub
   :map
   (fn [db]
     (:map db)))

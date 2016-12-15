@@ -6,28 +6,9 @@
 
 
 ;; home
-
-(defn home-title []
-  (let [name (re-frame/subscribe [:name])]
-    (fn []
-      [re-com/title
-       :label (str "Hello from " @name ". This is the Home Page.")
-       :level :level1])))
-
-(defn link-to-about-page []
-  [re-com/hyperlink-href
-   :label "go to About Page"
-   :href "#/about"])
-
-(comment defn home-panel []
-         [re-com/v-box
-          :gap "1em"
-          :children [[home-title] [link-to-about-page]]])
-
 (defn home-panel []
-  (let [routes (re-frame/subscribe [:routes])]
     (fn []
-      [google-map-component])))
+      [google-map-component]))
 
 
 ;; about

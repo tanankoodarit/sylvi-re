@@ -61,8 +61,8 @@
                     :optimizations   :advanced
                     :closure-defines {goog.DEBUG false}
                     :pretty-print    false
-                    :externs       ["externs.js"]
-                    :closure-warnings {:externs-validation :off}}}
+                    :externs         ["externs.js"]
+                    }}
 
     {:id           "test"
      :source-paths ["src/cljs" "test/cljs"]
@@ -71,7 +71,7 @@
                     :output-dir    "resources/public/js/compiled/test/out"
                     :optimizations :none
                     :externs       ["externs.js"]
-                    :closure-warnings {:externs-validation :off}}}
+                    }}
     ]}
   :aws {:access-key       ~(System/getenv "AWS_ACCESS_KEY_ROO")
         :secret-key       ~(System/getenv "AWS_SECRET_ACCESS_KEY_ROO")
