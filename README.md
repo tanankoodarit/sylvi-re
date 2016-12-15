@@ -1,6 +1,6 @@
 # sylvi-re
 
-A [re-frame](https://github.com/Day8/re-frame) application designed to ... well, that part is up to you.
+[![Build Status](https://travis-ci.org/tanankoodarit/sylvi-re.svg?branch=master)](https://travis-ci.org/tanankoodarit/sylvi-re)
 
 ## Development Mode
 
